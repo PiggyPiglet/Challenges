@@ -7,6 +7,7 @@ public class Warrior extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Warrior v" + getDescription().getVersion() + " enabled.");
         this.getCommand("warrior").setExecutor(new WarriorCommand());
+        this.getCommand("archer").setExecutor(new WarriorCommand());
     }
     @Override
     public void onDisable() {

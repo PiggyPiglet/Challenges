@@ -8,3 +8,6 @@ commands:
   warrior:
     description: Get the warrior kit
     usage: /warrior
+  archer:
+    description: Get the archer kit
+    usage: /archer
