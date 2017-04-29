@@ -1,0 +1,9 @@
+name: Sword
+version: 1.0.0
+description:
+author: PiggyPiglet
+website: https://www.piggypiglet.me
+main: me.piggypiglet.sword.Sword
+commands:
+  sword:
+    description: Give yourself a kewlios sword
