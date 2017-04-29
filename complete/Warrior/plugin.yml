@@ -1,0 +1,10 @@
+name: Warrior
+version: 1.0.0
+description:
+author: PiggyPiglet
+website: https://www.piggypiglet.me
+main: me.piggypiglet.warrior.Warrior
+commands:
+  warrior:
+    description: Get the warrior kit
+    usage: /warrior
