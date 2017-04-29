@@ -1,7 +1,7 @@
-#Challenges
+# Challenges
 Wtf is this? Well, this is my challenges repository. I follow through these challenges to get better at java, all of the code in here is done by myself. You may use it for whatever you wish as long as you don't take credit, if you would like to follow the challenges yourself, they will be listed below. If you get stuck, you can look at my code in the complete folder. 
 
-#Challenges
+# Challenges list
 
 1. Register a /greet command which sends "Hello!" to the player (Extra challenge: Add an optional extra argument which is the player's name that should be greeted)
 
