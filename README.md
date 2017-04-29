@@ -27,7 +27,7 @@ Wtf is this? Well, this is my challenges repository. I follow through these chal
 
 12. Create a signs that grants you items on right-click (Extra challenge: trade instead, so you will only get the items if you have enough of another item)
 
-13. Create a (static) utility function that adds an ATTACK_SPEED attribute to a weapon or tool, in a way that it cancels out the 1.9 changes (Extra challenge: Also cancel out the damage changes for each tool. Here are the old damage values)
+13. Create a (static) utility function that adds an ATTACK_SPEED attribute to a weapon or tool, in a way that it cancels out the 1.9 changes (Extra challenge: Also cancel out the damage changes for each tool. [Here](http://minecraft.gamepedia.com/index.php?title=Damage&oldid=950696#Dealing_damage) are the old damage values)
 
 14. Create a chat filter. (Extra challenge: Detect leet speech, eg. sh1t or f4gg0t)
 
