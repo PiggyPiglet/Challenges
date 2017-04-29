@@ -1,0 +1,10 @@
+name: Greet
+version: 1.0.0
+description: Greet plugin
+author: PiggyPiglet
+website: https://www.piggypiglet.me
+main: me.piggypiglet.greet.Greet
+commands:
+  greet:
+    description: Greet yourself
+    usage: /greet
