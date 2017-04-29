@@ -7,4 +7,4 @@ main: me.piggypiglet.greet.Greet
 commands:
   greet:
     description: Greet yourself
-    usage: /greet
+    usage: /greet [optional args]
