@@ -41,4 +41,4 @@ Here are some more advanced challenges that'll need a lot more research:
 
 3. Develop an anti-cheat. For every hack, think about how the hacker's behavior differs from a normal's user (eg. for speed hacks, a normal user moves only X blocks per seconds while a hacker may move faster). This is a very hard task and needs extensive testing.
 
-Challenges list by (StillNoNumber)[https://www.spigotmc.org/threads/challenges.235525/#post-2378547]
+Challenges list by [StillNoNumber](https://www.spigotmc.org/threads/challenges.235525/#post-2378547)
