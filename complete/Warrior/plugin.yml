@@ -11,3 +11,6 @@ commands:
   archer:
     description: Get the archer kit
     usage: /archer
+  mage:
+    description: Get the mage kit
+    usage: /mage

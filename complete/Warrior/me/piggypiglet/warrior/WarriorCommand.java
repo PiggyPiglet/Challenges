@@ -1,11 +1,20 @@
 package me.piggypiglet.warrior;
 
-import org.bukkit.Material;
+import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import static org.bukkit.Material.*;
+import static org.bukkit.enchantments.Enchantment.*;
+import static org.bukkit.event.block.Action.*;
 
 public class WarriorCommand implements CommandExecutor {
     @Override
@@ -15,11 +24,11 @@ public class WarriorCommand implements CommandExecutor {
             if (cmd.getName().equalsIgnoreCase("warrior")) {
 
                 ItemStack[] warrior;
-                warrior = new ItemStack[]{new ItemStack(Material.IRON_SWORD), new ItemStack(Material.FISHING_ROD)};
-                ItemStack helmet = new ItemStack(Material.IRON_HELMET);
-                ItemStack chestplate = new ItemStack(Material.IRON_CHESTPLATE);
-                ItemStack leggings = new ItemStack(Material.IRON_LEGGINGS);
-                ItemStack boots = new ItemStack(Material.IRON_BOOTS);
+                warrior = new ItemStack[]{new ItemStack(IRON_SWORD), new ItemStack(FISHING_ROD)};
+                ItemStack helmet = new ItemStack(IRON_HELMET);
+                ItemStack chestplate = new ItemStack(IRON_CHESTPLATE);
+                ItemStack leggings = new ItemStack(IRON_LEGGINGS);
+                ItemStack boots = new ItemStack(IRON_BOOTS);
 
                 player.getInventory().clear();
                 player.getInventory().addItem(warrior);
@@ -31,14 +40,34 @@ public class WarriorCommand implements CommandExecutor {
             if (cmd.getName().equalsIgnoreCase("archer")) {
 
                 ItemStack[] archer;
-                archer = new ItemStack[]{new ItemStack(Material.WOOD_SWORD), new ItemStack(Material.ARROW, 64), new ItemStack(Material.ARROW, 64)};
-                ItemStack helmet = new ItemStack(Material.CHAINMAIL_HELMET);
-                ItemStack chestplate = new ItemStack(Material.CHAINMAIL_CHESTPLATE);
-                ItemStack leggings = new ItemStack(Material.CHAINMAIL_LEGGINGS);
-                ItemStack boots = new ItemStack(Material.CHAINMAIL_BOOTS);
+                archer = new ItemStack[]{new ItemStack(WOOD_SWORD), new ItemStack(ARROW, 64), new ItemStack(ARROW, 64)};
+                ItemStack helmet = new ItemStack(CHAINMAIL_HELMET);
+                ItemStack chestplate = new ItemStack(CHAINMAIL_CHESTPLATE);
+                ItemStack leggings = new ItemStack(CHAINMAIL_LEGGINGS);
+                ItemStack boots = new ItemStack(CHAINMAIL_BOOTS);
 
                 player.getInventory().clear();
                 player.getInventory().addItem(archer);
+                player.getInventory().setHelmet(helmet);
+                player.getInventory().setChestplate(chestplate);
+                player.getInventory().setLeggings(leggings);
+                player.getInventory().setBoots(boots);
+            }
+            if (cmd.getName().equalsIgnoreCase("mage")) {
+
+                ItemStack mage = new ItemStack(STICK);
+                ItemMeta meta = mage.getItemMeta();
+                meta.addEnchant(KNOCKBACK, 2, false);
+                meta.setDisplayName("§cWand");
+                mage.setItemMeta(meta);
+
+                ItemStack helmet = new ItemStack(GOLD_HELMET);
+                ItemStack chestplate = new ItemStack(GOLD_CHESTPLATE);
+                ItemStack leggings = new ItemStack(GOLD_LEGGINGS);
+                ItemStack boots = new ItemStack(GOLD_BOOTS);
+
+                player.getInventory().clear();
+                player.getInventory().addItem(mage);
                 player.getInventory().setHelmet(helmet);
                 player.getInventory().setChestplate(chestplate);
                 player.getInventory().setLeggings(leggings);
@@ -48,3 +77,4 @@ public class WarriorCommand implements CommandExecutor {
     return true;
     }
 }
+
