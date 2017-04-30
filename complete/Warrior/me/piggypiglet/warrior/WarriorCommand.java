@@ -40,7 +40,7 @@ public class WarriorCommand implements CommandExecutor {
             if (cmd.getName().equalsIgnoreCase("archer")) {
 
                 ItemStack[] archer;
-                archer = new ItemStack[]{new ItemStack(WOOD_SWORD), new ItemStack(ARROW, 64), new ItemStack(ARROW, 64)};
+                archer = new ItemStack[]{new ItemStack(WOOD_SWORD), new ItemStack(BOW), new ItemStack(ARROW, 64), new ItemStack(ARROW, 64)};
                 ItemStack helmet = new ItemStack(CHAINMAIL_HELMET);
                 ItemStack chestplate = new ItemStack(CHAINMAIL_CHESTPLATE);
                 ItemStack leggings = new ItemStack(CHAINMAIL_LEGGINGS);
