@@ -1,0 +1,13 @@
+name: Arena
+version: 1.0.0
+description: Arena plugin
+author: PiggyPiglet
+website: https://www.piggypiglet.me
+main: me.piggypiglet.arena.Arena
+commands:
+  arena:
+    description: Teleport to an arena
+    usage: /arena
+  setarena:
+    description: Set an arena
+    usage: /setarena
