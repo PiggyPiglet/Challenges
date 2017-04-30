@@ -22,10 +22,12 @@ public class ArenaCommand implements CommandExecutor {
                 plugin.getConfig().set("y", player.getLocation().getBlockY());
                 plugin.getConfig().set("z", player.getLocation().getBlockZ());
                 plugin.saveConfig();
-                player.sendRawMessage("§7Arena spawn set to §c" + player.getLocation().getBlockX() + " §c" + player.getLocation().getBlockY() + " §c" + player.getLocation().getBlockZ());
+                player.getWorld().setSpawnLocation(player.getLocation().getBlockX(), player.getLocation().getBlockY(), player.getLocation().getBlockZ());
+                player.sendRawMessage("§7Arena and world spawn set to §c" + player.getLocation().getBlockX() + " §c" + player.getLocation().getBlockY() + " §c" + player.getLocation().getBlockZ());
             }
             if (cmd.getName().equalsIgnoreCase("arena")) {
-                player.teleport(new Location(Bukkit.getWorld("world"), plugin.getConfig().getInt("x"), plugin.getConfig().getInt("y"), plugin.getConfig().getInt("z") ));
+                player.teleport(new Location(Bukkit.getWorld("world"), plugin.getConfig().getInt("x"), plugin.getConfig().getInt("y"), plugin.getConfig().getInt("z")));
+                player.sendRawMessage("§7You have been teleported to the arena");
             }
         }
         return true;
