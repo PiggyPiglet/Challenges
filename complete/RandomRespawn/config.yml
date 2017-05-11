@@ -1,0 +1,21 @@
+# This is the default config for RandomRespawn.
+# You can add more locations in the location section.
+# locations:
+#   Swamp:
+#     x: 632
+#     y: 10
+#     z: 31
+#   Bush:
+#     x: 4321
+#     y: 120
+#     z: 951
+#   Clay:
+#     x: 66123
+#     y: 109
+#     z: 392
+
+locations:
+  name:
+    x: 10
+    y: 100
+    z: 10

@@ -1,0 +1,10 @@
+name: RandomRespawn
+version: 1.0.0
+description: A plugin that randomly respawns you at a set respawn point.
+author: PiggyPiglet
+website: https://www.piggypiglet.me
+main: me.piggypiglet.rr.RandomRespawn
+commands:
+  rr:
+    description: random respawn
+    usage: /rr
