@@ -26,5 +26,4 @@ public class SwordCommand implements CommandExecutor {
         }
         return true;
     }
-
 }

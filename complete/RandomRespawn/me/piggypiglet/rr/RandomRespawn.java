@@ -8,6 +8,7 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomRespawn extends JavaPlugin {
+
     public String getRandomStringFromList(List<String> list) {
         ThreadLocalRandom random = ThreadLocalRandom.current();
         int randomNumber = random.nextInt(list.size());
@@ -15,6 +16,7 @@ public class RandomRespawn extends JavaPlugin {
 
         return randomString;
     }
+
     private List<String> locationList;
 
     public List<String> getLocationList() {
@@ -24,14 +26,12 @@ public class RandomRespawn extends JavaPlugin {
     }
     @Override
     public void onEnable() {
-        getLogger().info("RandomRespawn v" + getDescription().getVersion() + " enabled.");
-        this.getCommand("rr").setExecutor(new RRCommand(this));
+        getCommand("rr").setExecutor(new RRCommand(this));
         getServer().getPluginManager().registerEvents(new RREvent(this), this);
-        final FileConfiguration config = this.getConfig();
-        config.addDefault("locations.name.x", 10);
-        config.addDefault("locations.name.y", 100);
-        config.addDefault("locations.name.z", 10);
-        config.options().copyDefaults(true);
+        getConfig().addDefault("locations.name.x", 10);
+        getConfig().addDefault("locations.name.y", 100);
+        getConfig().addDefault("locations.name.z", 10);
+        getConfig().options().copyDefaults(true);
         saveConfig();
         ConfigurationSection section = this.getConfig().getConfigurationSection("locations");
 
@@ -44,8 +44,5 @@ public class RandomRespawn extends JavaPlugin {
                 }
             }
         }
-    }
-    public void onDisable() {
-        getLogger().info("RandomRespawn v" + getDescription().getVersion() + " disabled.");
     }
 }
