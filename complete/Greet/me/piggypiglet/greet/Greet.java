@@ -6,12 +6,6 @@ public class Greet extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Greet v" + getDescription().getVersion() + " enabled.");
-        this.getCommand("greet").setExecutor(new GreetCommand());
-    }
-
-    @Override
-    public void onDisable() {
-        getLogger().info("Greet v" + getDescription().getVersion() + " disabled.");
+        getCommand("greet").setExecutor(new GreetCommand());
     }
 }

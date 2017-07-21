@@ -8,7 +8,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class ArenaCommand implements CommandExecutor {
-    Arena plugin;
+
+    private Arena plugin;
 
     public ArenaCommand(Arena instance) {
         plugin = instance;
