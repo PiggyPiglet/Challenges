@@ -1,5 +1,5 @@
 # Challenges
-Wtf is this? Well, this is my challenges repository. I follow through these challenges to get better at java, all of the code in here is done by myself. You may use it for whatever you wish as long as you don't take credit, if you would like to follow the challenges yourself, they will be listed below. If you get stuck, you can look at my code in the complete folder. 
+Wtf is this? Well, this is my challenges repository, which contains the projects that assisted me in learning the spigot api and java when I was first starting out. 
 
 # Challenges list
 
