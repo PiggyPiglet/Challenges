@@ -1,6 +1,8 @@
 # Challenges
 Wtf is this? Well, this is my challenges repository, which contains the projects that assisted me in learning the spigot api and java when I was first starting out. 
 
+WARNING: The complete folder in here isn't a full collection of the completed challenges, they are merely my attempts, and should not under any circumstances be used as a guide.
+
 # Challenges list
 
 1. Register a /greet command which sends "Hello!" to the player (Extra challenge: Add an optional extra argument which is the player's name that should be greeted)
